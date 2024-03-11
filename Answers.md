@@ -1,9 +1,5 @@
 Q.1. Explain the relationship between the "Product" and "Product_Category" entities from the above diagram.
-Ans: The relationship between these two tables is one-to-many. A product can belong to one category (indicated by the foreign key category_id in the Product table), 
-but a category can have many products (as a single category can be referenced by many rows in the Product table).  
-This design allows for efficient storage of product data and simplifies queries to find all the products in a particular category.
-The number 1 on the arrow next to "Product" indicates that a single product can only be linked to one category using the category_id foreign key.
-Therefore, one product belongs to one category, but a category can have many products. This exemplifies a classic one-to-many relationship.
+Ans: The type of relationship between the Product and Product_Category tables is a many-to-one relationship, where many products can belong to one product category. This is indicated by the foreign key category_id in the Product table referencing the primary key id in the Product_Category table.
 
 Q.2. How could you ensure that each product in the "Product" table has a valid category assigned to it?
 Ans: there are a few ways to ensure that each product in the "Product" table has a valid category assigned to it:
